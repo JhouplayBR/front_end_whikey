@@ -1,0 +1,100 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+
+}
+
+.nav__container{
+    width: 100%;
+    text-align: center;
+}
+.nav__bar .uls ul li {
+    display: inline-block;
+}
+.nav__bar{
+    margin-top: 28px;
+}
+.nav__bar .uls ul li a {
+    color: #2E2F30;
+    text-decoration: none;
+    font-size: 18px;
+    margin: 0px 20px;
+    font-weight: 600;
+}
+.logo{
+    left: 60px;
+    top: 15px;
+    margin-left: 30px;
+    position: absolute;
+
+}
+.logo img{
+    width: 80px;
+    height: 80px;
+}
+.main_container_page .img_main{
+    float: right;
+    margin-right: 120px;
+    animation: fade_left 2.5s ease-in-out;
+}
+.main_container_page .img_main img{
+    width: 230px;
+    height: 750px;
+    -webkit-filter: drop-shadow(5px 5px 5px #222 );
+    filter: drop-shadow(5px 5px 5px #222);
+}
+@keyframes fade_left {
+    0%{
+        transform: translateX(210px);
+    }
+}
+.log_message {
+    padding: 36px;
+    top:30%;
+    background: #F7F7F7;
+    position: fixed;
+    width: 100%;
+    animation: alert 1s ease-in-out;
+}
+.log_message .message{
+    text-align: center;
+    margin: 10px;
+}
+.log_message .message a{
+    text-decoration: none;
+    color: #2E2F30;
+    background: #CCCCCC;
+    padding: 18px 60px;
+    width: 35px;
+    cursor: pointer;
+    margin:0px 25px;
+}
+.choices{
+    margin-top: 32px;
+}
+@keyframes alert {
+    0%{
+        transform: translateY(150px);
+    }
+}
+
