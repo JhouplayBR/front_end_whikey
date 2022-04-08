@@ -3,12 +3,11 @@ import "@hotwired/turbo-rails"
 import "controllers"
 $(function(){
     if($('.log_message').is(':visible')){
-        $('.nav__container').fadeOut();
         $('body').css('background','black');
         $('#y').click(function (){
-            $('.nav__container').fadeIn();
+            $('main').fadeIn();
             $('.log_message').fadeOut();
-            $('body').css('background','none');
+            $('body').css('background','#0064c1');
         })
     }
 
