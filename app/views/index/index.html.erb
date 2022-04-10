@@ -10,12 +10,10 @@
 
 <!---------Menu--------->
 <div class="collection">
-  <% 12.times do %>
-  <a href="#!" class="collection-item"><%= image_tag 'jack.png',width: 20,height: 50 %> Jack</a>
+  <% @whisky.all_whisky['results'].each do |whisky| %>
+  <a href="#!=" class="collection-item"><img style="width: 20px;height: 50px" src="<%= whisky['detail_img_url'] %>"><%= whisky['title'] %></a>
     <% end %>
 </div>
-<!--------------------->
-
   <div class="main">
   <div class="container-1">
     <div class="imgpep">
