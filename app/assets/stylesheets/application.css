@@ -19,35 +19,16 @@
     margin: 0;
 }
 body{
-    background-color: black;
-    font-family: 'Poppins', sans-serif;
+    background-color: white;
+    font-family: 'Open Sans', sans-serif;
 }
 .main {
+    color: #2E2F30;
     display: none;
+    font-size: 12px !important;
 }
-.navbar ul li{
-    display: inline-block;
-    padding-left: 120px;
-    transition: transform 0.5s;
-
-
-}
-.navbar{
-    position:absolute;
-    top: 35px;
-    left: 20%;
-}
-.container{
-    width: 100% !important;
-    position: relative;
-    transition: 2s cubic-bezier(0.5,0.5,0,1);
-
-
-}
-.navbar ul li a {
-    text-decoration: none;
-    color: white;
-    font-size: 20px;
+nav{
+    background: #2E2F30 !important;
 }
 
 .img-logo{
@@ -74,20 +55,21 @@ body{
 .descri{
     margin-top: 100px;
     margin-left: 100px;
-    color: white;
+    color: black;
 }
 h1{
-    font-size: 60px;
+    font-size: 42px;
 }
 .btn_buy{
     padding-top: 20px;
     margin-top: 40px;
 }
 .btn_buy a {
-    background-color: white;
     text-align: center;
     padding: 25px 32px;
+    background: #666666;
     text-decoration: none;
+    color:white;
 }
 .icons{
     right: 20px;
@@ -171,6 +153,19 @@ h1{
         transform: translateX(-300px);
     }
 
+}
+.for_you{
+    margin: 150px;
+}
+.up{
+    text-align: center;
+    color: #111111;
+    animation: for_fade 1s ease-in-out ;
+}
+@keyframes for_fade {
+    0%{
+        transform: translateY(50px);
+    }
 }
 @media only screen and (max-width:800px){
     .img-logo img{

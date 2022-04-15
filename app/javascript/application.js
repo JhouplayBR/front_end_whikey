@@ -2,16 +2,20 @@
 import "@hotwired/turbo-rails"
 import "controllers"
 $(function(){
+    var current_url = window.location.pathname;
     setInterval(function (){
         $('.progress').fadeOut()
     },500);
-    if($('.log_message').is(':visible')){
-        $('body').css('background','black');
-        $('#y').click(function (){
+    if(current_url.split('/')[1] == ""){
+    if($('.log_message').is(':visible')) {
+        $('body').css('background', 'black');
+        $('#y').click(function () {
             $('.main').fadeIn();
             $('.log_message').fadeOut();
-            $('body').css('background','#0064c1');
+            $('body').css('background', 'white');
         })
     }
-
+    }else{
+        $('body').css('background', 'white');
+    }
 })

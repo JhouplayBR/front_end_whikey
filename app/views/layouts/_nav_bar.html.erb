@@ -1,23 +1,15 @@
-<div class="container">
-  <div class="header">
-    <div class="img-logo">
-      <%= image_tag 'whiskey_logo.png', class: "logo_nav",width: 200 %>
-    </div>
-    <div class="navbar">
-      <ul>
-        <li><a id="menu" style="cursor: pointer">Menu</a>
-          <i style="display: none;cursor: pointer;color:#F7F7F7" class="small material-icons close">close</i>
-        </li>
-        <li><a href="#">Login</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Promo</a></li>
-      </ul>
-    </div>
+
+<nav>
+  <div class="nav-wrapper">
+    <a href="#!" class="brand-logo"><i class="material-icons">cloud</i>Logo</a>
+    <ul class="right hide-on-med-and-down">
+      <li><a href="sass.html"><i class="material-icons">search</i></a></li>
+      <li><%= link_to 'Inicio','/' %></li>
+      <li><a id="menu" style="cursor: pointer">Menu</a>
+        <i style="display: none;cursor: pointer;color:#F7F7F7" class="small material-icons close">close</i>
+      </li>
+      <li><%= link_to 'Para você','/for_you' %></li>
+      <li><a href="mobile.html"><i class="material-icons">more_vert</i></a></li>
+    </ul>
   </div>
-  <div class="icons">
-    <%= image_tag 'bag.png'%>
-    <%= image_tag 'user.png',width: 30%>
-  </div>
-</div>
-  </div>
-</div>
+</nav>
